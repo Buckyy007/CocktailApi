@@ -1,0 +1,23 @@
+<!--NavBar-->
+<app-navbar></app-navbar>
+<!---->
+<p>cocktail works!</p>
+
+<div class="container" *ngIf="detailCocktail">
+    <h1 class="p-4">{{detailCocktail.strDrink}}</h1>
+    <div class="row">
+        <div class="col-4">
+            <img [src]="detailCocktail.strDrinkThumb" height="25%"/>
+        </div>
+        <div class="col">
+            <h5>Ingredientes</h5>
+            
+            <p>{{detailCocktail.strIngredient1}}</p>
+            <p>{{detailCocktail.strIngredient2}}</p>
+            <p>{{detailCocktail.strIngredient3}}</p>
+            <p>{{detailCocktail.strIngredient4}}</p>
+            <p>{{detailCocktail.strIngredient5}}</p>
+        </div>
+    </div>
+</div>
+
